@@ -1,0 +1,57 @@
+{
+  "name": "react-lazy-progressive-image",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "flow": "flow",
+    "dev": "parcel demo/index.html",
+    "prebuild": "rimraf dist",
+    "pretty": "prettier --write '{__tests__,src}/*.js'",
+    "build": "babel src --out-dir dist",
+    "lint": "eslint {__tests__,src}/*.js",
+    "test:only": "jest",
+    "test": "npm run lint && npm run flow && npm run test:only",
+    "prepublish": "npm run pretty && npm run test && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imbhargav5/react-lazy-progressive-image.git"
+  },
+  "author": "Bhargav Ponnapalli <bhargavponnapalli.5@gmail.com> (https://github.com/imbhargav5)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/imbhargav5/react-lazy-progressive-image/issues"
+  },
+  "homepage": "https://github.com/imbhargav5/react-lazy-progressive-image#readme",
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-eslint": "8.2.1",
+    "babel-jest": "22.1.0",
+    "babel-loader": "7.1.2",
+    "babel-preset-env": "1.6.1",
+    "babel-preset-flow": "6.23.0",
+    "babel-preset-react": "6.24.1",
+    "enzyme": "3.3.0",
+    "enzyme-adapter-react-16": "1.1.1",
+    "eslint": "4.15.0",
+    "eslint-config-prettier": "2.9.0",
+    "eslint-plugin-babel": "4.1.2",
+    "eslint-plugin-filenames": "1.2.0",
+    "eslint-plugin-flowtype": "2.41.0",
+    "eslint-plugin-prettier": "2.5.0",
+    "eslint-plugin-react": "7.5.1",
+    "flow-bin": "0.63.1",
+    "jest": "22.1.1",
+    "prettier": "1.10.2",
+    "react": "16.2.0",
+    "react-dom": "16.2.0",
+    "rimraf": "2.6.2",
+    "styled-components": "2.4.0",
+    "webpack": "3.10.0",
+    "webpack-dev-server": "2.11.0"
+  },
+  "dependencies": {
+    "react-visibility-sensor": "3.11.0"
+  }
+}
