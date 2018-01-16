@@ -1,11 +1,11 @@
 <p align="center" >
-![Logo](.github/Logo.png)
+![Logo](https://github.com/imbhargav5/react-lazy-progressive-image/blob/master/.github/Logo.png?raw=true)
 </p>
 <h1 align="center">react-lazy-progressive-image</h1>
 
 <hr/>
 
-![Screenshare](.github/screenshare.gif)
+<img src="https://github.com/imbhargav5/react-lazy-progressive-image/blob/master/.github/screenshare.gif"/>
 
 <hr/>
 
