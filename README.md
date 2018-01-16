@@ -1,9 +1,11 @@
-<p align="center" ><img src="https://github.com/imbhargav5/react-lazy-progressive-image/blob/master/.github/Logo.png"/></p>
+<p align="center" >
+![Logo](.github/Logo.png)
+</p>
 <h1 align="center">react-lazy-progressive-image</h1>
 
 <hr/>
 
-<img src="https://github.com/imbhargav5/react-lazy-progressive-image/blob/master/.github/screenshare?raw=true"/>
+![Screenshare](.github/screenshare.gif)
 
 <hr/>
 
