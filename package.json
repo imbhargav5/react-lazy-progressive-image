@@ -2,13 +2,14 @@
   "name": "react-lazy-progressive-image",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "flow": "flow",
+    "predev": "rimraf dist",
     "dev": "parcel demo/index.html",
-    "prebuild": "rimraf dist",
+    "prebuild": "rimraf lib",
     "pretty": "prettier --write '{__tests__,src}/*.js'",
-    "build": "babel src --out-dir dist",
+    "build": "babel src --out-dir lib",
     "lint": "eslint {__tests__,src}/*.js",
     "test:only": "jest",
     "test": "npm run lint && npm run flow && npm run test:only",
@@ -18,12 +19,14 @@
     "type": "git",
     "url": "git+https://github.com/imbhargav5/react-lazy-progressive-image.git"
   },
-  "author": "Bhargav Ponnapalli <bhargavponnapalli.5@gmail.com> (https://github.com/imbhargav5)",
+  "author":
+    "Bhargav Ponnapalli <bhargavponnapalli.5@gmail.com> (https://github.com/imbhargav5)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/imbhargav5/react-lazy-progressive-image/issues"
   },
-  "homepage": "https://github.com/imbhargav5/react-lazy-progressive-image#readme",
+  "homepage":
+    "https://github.com/imbhargav5/react-lazy-progressive-image#readme",
   "devDependencies": {
     "babel-cli": "6.26.0",
     "babel-eslint": "8.2.1",
