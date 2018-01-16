@@ -5,7 +5,7 @@
 
 <hr/>
 
-<img src="https://github.com/imbhargav5/react-lazy-progressive-image/blob/master/.github/screenshare.gif"/>
+<img src="https://github.com/imbhargav5/react-lazy-progressive-image/blob/master/.github/screenshare.gif?raw=true"/>
 
 <hr/>
 
