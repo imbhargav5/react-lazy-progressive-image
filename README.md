@@ -36,8 +36,8 @@ A good amount of code has been taken from <a href="https://github.com/Formidable
 
 ### ✊ Improvements in the roadmap
 
-[ ] Loading images in browser cache directly instead of showing placeholder
-[ ] Examples
+ - [ ] Loading images in browser cache directly instead of showing placeholder
+ - [ ] Examples
 
 ## 🙏 Credits
 
