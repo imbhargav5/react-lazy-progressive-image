@@ -1,8 +1,5 @@
-<div style="height:300px; display : flex; align-items: center;
-flex-direction : column; justify-content:center; text-align:center;">
-<h1>React Lazy Progressive Image</h1>
-<p>Load low resolution/ placeholder image first and then load the actual image lazily when it's in the viewport.</p>
-</div>
+<h1 align="center">React Lazy Progressive Image</h1>
+<p align="center">Load low resolution/ placeholder image first and then load the actual image lazily when it's in the viewport.</p>
 
 # :zap: Installation
 
