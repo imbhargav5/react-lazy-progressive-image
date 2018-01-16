@@ -1,18 +1,47 @@
-# React Lazy Progressive Image
+<div style="height:300px; display : flex; align-items: center;
+flex-direction : column; justify-content:center; text-align:center;">
+<h1>React Lazy Progressive Image</h1>
+<p>Load low resolution/ placeholder image first and then load the actual image lazily when it's in the viewport.</p>
+</div>
 
+# :zap: Installation
 
+The package is available on npm.
 
+```bash
+npm i -s react-lazy-progressive-image
+```
 
-### Why?
+# :zap: Usage
 
-Because we would like to load a low resolution placeholder image initially and the load the high resolution image only when the image is in the viewport.
+```javascript
+import React, { Component } from "react";
+import LazyImage from "react-lazy-progressive-image";
 
-### How was this package made
+class App extends Component {
+  render() {
+    return (
+      <LazyImage
+        placeholder={"http://example.com/placeholder.png"}
+        src={"http://example.com/src.png"}
+      >
+        {(src, loading) => <img src={src} />}
+      </LazyImage>
+    );
+  }
+}
+```
 
-A lot of code has been taken from <a href="https://github.com/FormidableLabs/react-progressive-image">react-progressive-image</a>, the only addition being the usage of <a href="https://github.com/joshwnj/react-visibility-sensor">react-visibility-sensor</a> to check if there is a need to load the image.
+### 🔨🔨 How was this package made
 
-# Credits
+A good amount of code has been taken from <a href="https://github.com/FormidableLabs/react-progressive-image">react-progressive-image</a>, the additions being the usage of <a href="https://github.com/joshwnj/react-visibility-sensor">react-visibility-sensor</a> to check if there is a need to load the image and making sure that the image doesn't load in advance when it's not really needed.
+
+### ✊ Improvements in the roadmap
+
+[ ] Loading images in browser cache directly instead of showing placeholder
+[ ] Examples
+
+## 🙏 Credits
 
 1. <a href="https://github.com/FormidableLabs"> Formidable Labs </a>
 2. <a href="https://github.com/joshwnj"> Josh Johnston </a>
-
