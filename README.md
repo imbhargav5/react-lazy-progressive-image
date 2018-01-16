@@ -10,6 +10,8 @@ The package is available on npm.
 npm i -s react-lazy-progressive-image
 ```
 
+<hr/>
+
 # :zap: Usage
 
 Just like `react-progressive-image` this component expects exactly one child which has to be a function.
@@ -39,6 +41,8 @@ The child which is a function will have access to `src`, `loading` and `isVisibl
 | src         | The src of the image being rendered                                                              | String  | Initially points to the placeholder image, then loads image and will then point to the source image |
 | loading     | Whether the image is currently being loaded                                                      | Boolean | true/false                                                                                          |
 | isVisible   | Whether the image is currently visible in the page. This is managed by `react-visibility-sensor` | Boolean | true/false                                                                                          |
+
+<hr/>
 
 ### Example usage with styled-components
 
@@ -75,14 +79,20 @@ class Usage extends Component {
 }
 ```
 
-### 🔨🔨 How was this package made
+<hr/>
+
+## How was this package made 🔧
 
 A good amount of code has been taken from <a href="https://github.com/FormidableLabs/react-progressive-image">react-progressive-image</a>, the additions being the usage of <a href="https://github.com/joshwnj/react-visibility-sensor">react-visibility-sensor</a> to check if there is a need to load the image and making sure that the image doesn't load in advance when it's not really needed.
+
+<hr/>
 
 ### ✊ Improvements in the roadmap
 
 * [ ] Loading images in browser cache directly instead of showing placeholder
 * [ ] More Examples
+
+<hr/>
 
 ## 🙏 Credits
 
