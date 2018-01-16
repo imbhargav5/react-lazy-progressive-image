@@ -1,9 +1,11 @@
 {
   "name": "react-lazy-progressive-image",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "lib/index.js",
-  "files": [".github"],
+  "files": [
+    ".github"
+  ],
   "scripts": {
     "flow": "flow",
     "predev": "rimraf dist",
@@ -20,14 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/imbhargav5/react-lazy-progressive-image.git"
   },
-  "author":
-    "Bhargav Ponnapalli <bhargavponnapalli.5@gmail.com> (https://github.com/imbhargav5)",
+  "author": "Bhargav Ponnapalli <bhargavponnapalli.5@gmail.com> (https://github.com/imbhargav5)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/imbhargav5/react-lazy-progressive-image/issues"
   },
-  "homepage":
-    "https://github.com/imbhargav5/react-lazy-progressive-image#readme",
+  "homepage": "https://github.com/imbhargav5/react-lazy-progressive-image#readme",
   "devDependencies": {
     "babel-cli": "6.26.0",
     "babel-eslint": "8.2.1",
