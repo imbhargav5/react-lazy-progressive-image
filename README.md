@@ -1,3 +1,4 @@
+<p align="center" ><img src=".github/Logo.png"/></p>
 <h1 align="center">React Lazy Progressive Image</h1>
 <p align="center">Load low resolution/ placeholder image first and then load the actual image lazily when it's in the viewport.</p>
 
