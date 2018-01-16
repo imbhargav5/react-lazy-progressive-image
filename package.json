@@ -2,7 +2,8 @@
   "name": "react-lazy-progressive-image",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.js",
+  "main": "lib/index.js",
+  "files": [],
   "scripts": {
     "flow": "flow",
     "predev": "rimraf dist",

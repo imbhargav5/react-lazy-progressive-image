@@ -1,1 +1,5 @@
 demo
+.cache
+.git
+dist
+node_modules
