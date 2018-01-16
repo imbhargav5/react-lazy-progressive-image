@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "lib/index.js",
-  "files": [],
+  "files": [".github"],
   "scripts": {
     "flow": "flow",
     "predev": "rimraf dist",
