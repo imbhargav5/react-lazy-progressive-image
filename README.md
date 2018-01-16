@@ -25,7 +25,7 @@ class App extends Component {
         placeholder={"http://example.com/placeholder.png"}
         src={"http://example.com/src.png"}
       >
-        {(src, loading) => <img src={src} />}
+        {(src, loading, isVisible) => <img src={src} />}
       </LazyImage>
     );
   }
@@ -39,6 +39,41 @@ The child which is a function will have access to `src`, `loading` and `isVisibl
 | src         | The src of the image being rendered                                                              | String  | Initially points to the placeholder image, then loads image and will then point to the source image |
 | loading     | Whether the image is currently being loaded                                                      | Boolean | true/false                                                                                          |
 | isVisible   | Whether the image is currently visible in the page. This is managed by `react-visibility-sensor` | Boolean | true/false                                                                                          |
+
+### Example usage with styled-components
+
+You can use `styled-components`, to transition an image from the placeholder when the image has loaded.
+You can use the `render props` as mentioned above and then use it to animate the `opacity` of the image from `0.2` to `1` when the image is loaded. This is , of course, a basic example. But you can use this logic to create more powerful animations.
+
+For eg :
+
+```javascript
+import React, { Component } from "react";
+import styled from "styled-components";
+import LazyImage from "react-lazy-progressive-image";
+
+const Image = styled.img`
+  height: 450px;
+  width: 800px;
+  margin-top: 200px;
+  display: block;
+  transition: all 0.25s ease;
+  opacity: ${props => (props.loading ? 0.2 : 1)};
+`;
+
+class Usage extends Component {
+  render() {
+    return (
+      <LazyImage
+        src={"/assets/imageURL"}
+        placeholder={"/assets/placeholderURL"}
+      >
+        {(src, loading) => <Image src={src} loading={loading} />}
+      </LazyImage>
+    );
+  }
+}
+```
 
 ### 🔨🔨 How was this package made
 
