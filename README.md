@@ -49,11 +49,12 @@ class App extends Component {
 
 The child which is a function will have access to `src`, `loading` and `isVisible` values as arguments and the user can decide how to use those values to render image styles. (This pattern is called render props or children props pattern)
 
-| Render prop | Description                                                                                      | Type    | Values                                                                                              |
-| ----------- | ------------------------------------------------------------------------------------------------ | ------- | --------------------------------------------------------------------------------------------------- |
-| src         | The src of the image being rendered                                                              | String  | Initially points to the placeholder image, then loads image and will then point to the source image |
-| loading     | Whether the image is currently being loaded                                                      | Boolean | true/false                                                                                          |
-| isVisible   | Whether the image is currently visible in the page. This is managed by `react-visibility-sensor` | Boolean | true/false                                                                                          |
+| Render prop           | Description                                                                                      | Type    | Values                                                                                              |
+| --------------------- | ------------------------------------------------------------------------------------------------ | ------- | --------------------------------------------------------------------------------------------------- |
+| src                   | The src of the image being rendered                                                              | String  | Initially points to the placeholder image, then loads image and will then point to the source image |
+| loading               | Whether the image is currently being loaded                                                      | Boolean | true/false                                                                                          |
+| isVisible             | Whether the image is currently visible in the page. This is managed by `react-visibility-sensor` | Boolean | true/false                                                                                          |
+| visibilitySensorProps | Props to pass to `react-visibility-sensor` . Handy for `partialVisibility`                       | Object  | `undefined` or `{}`                                                                                 |
 
 <hr/>
 
