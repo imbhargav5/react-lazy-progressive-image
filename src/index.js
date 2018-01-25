@@ -6,7 +6,8 @@ type Props = {
   children: (string, boolean, boolean) => React.Node,
   onError?: (errorEvent: Event) => void,
   placeholder: string,
-  src: string
+  src: string,
+  visibilitySensorProps: ?any
 };
 
 type State = {
@@ -100,14 +101,17 @@ export default class LazyImage extends React.Component<Props, State> {
 
   render() {
     const { image, loading, isVisible } = this.state;
-    const { children } = this.props;
+    const { children, visibilitySensorProps } = this.props;
     if (!children || typeof children !== "function") {
       throw new Error(
         `LazyProgressiveImage requires a function as its only child`
       );
     }
     return (
-      <VisibilitySensor onChange={this.handleVisibilityChange}>
+      <VisibilitySensor
+        {...visibilitySensorProps}
+        onChange={this.handleVisibilityChange}
+      >
         {children(image, loading, isVisible)}
       </VisibilitySensor>
     );
