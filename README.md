@@ -1,9 +1,8 @@
-<p align="center" >
-<img src="https://github.com/imbhargav5/react-lazy-progressive-image/blob/master/.github/Logo.png?raw=true"/>
-</p>
-<h1 align="center">react-lazy-progressive-image</h1>
-<p align="center">
-<a href="https://nodei.co/npm/react-lazy-progressive-image/"><img src="https://nodei.co/npm/react-lazy-progressive-image.png?compact=true"></a>
+![](https://github.com/imbhargav5/react-lazy-progressive-image/blob/master/.github/Logo.png?raw=true)
+
+# react-lazy-progressive-image
+
+[![](https://nodei.co/npm/react-lazy-progressive-image.png?compact=true)](https://nodei.co/npm/react-lazy-progressive-image/)
 [![npm](https://img.shields.io/npm/dm/react-lazy-progressive-image.svg?style=for-the-badge)](https://www.npmjs.com/package/react-lazy-progressive-image)
 [![npm](https://img.shields.io/npm/l/react-lazy-progressive-image.svg?style=for-the-badge)](https://www.npmjs.com/package/react-lazy-progressive-image)
 [![CircleCI](https://circleci.com/gh/imbhargav5/react-lazy-progressive-image.svg?style=svg)](https://circleci.com/gh/imbhargav5/react-lazy-progressive-image)
