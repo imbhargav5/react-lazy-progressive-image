@@ -1,11 +1,16 @@
 {
   "name": "react-lazy-progressive-image",
   "version": "1.2.5",
-  "description":
-    "Load low resolution/ placeholder image first and then load the actual image lazily when it's in the viewport.",
+  "description": "Load low resolution/ placeholder image first and then load the actual image lazily when it's in the viewport.",
   "main": "lib/index.js",
-  "engines": { "node": ">=6.0.0" },
-  "files": [".github", "lib", "src"],
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "files": [
+    ".github",
+    "lib",
+    "src"
+  ],
   "scripts": {
     "flow": "flow",
     "predev": "rimraf dist",
@@ -15,6 +20,7 @@
     "build": "babel src --out-dir lib",
     "lint": "eslint {__tests__,src}/*.js",
     "test:only": "jest",
+    "pretest": "npm run build",
     "test": "npm run lint && npm run flow && npm run test:only",
     "prepublish": "npm run pretty && npm run test && npm run build",
     "postpublish": "git push origin master --tags"
@@ -23,19 +29,19 @@
     "type": "git",
     "url": "git+https://github.com/imbhargav5/react-lazy-progressive-image.git"
   },
-  "author":
-    "Bhargav Ponnapalli <bhargavponnapalli.5@gmail.com> (https://github.com/imbhargav5)",
+  "author": "Bhargav Ponnapalli <bhargavponnapalli.5@gmail.com> (https://github.com/imbhargav5)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/imbhargav5/react-lazy-progressive-image/issues"
   },
-  "homepage":
-    "https://github.com/imbhargav5/react-lazy-progressive-image#readme",
+  "homepage": "https://github.com/imbhargav5/react-lazy-progressive-image#readme",
   "devDependencies": {
     "babel-cli": "6.26.0",
     "babel-eslint": "8.2.1",
     "babel-jest": "22.1.0",
     "babel-loader": "7.1.2",
+    "babel-plugin-transform-class-properties": "6.24.1",
+    "babel-plugin-transform-object-rest-spread": "6.26.0",
     "babel-preset-env": "1.6.1",
     "babel-preset-flow": "6.23.0",
     "babel-preset-react": "6.24.1",

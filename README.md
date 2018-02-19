@@ -6,6 +6,7 @@
 <a href="https://nodei.co/npm/react-lazy-progressive-image/"><img src="https://nodei.co/npm/react-lazy-progressive-image.png?compact=true"></a>
 [![npm](https://img.shields.io/npm/dm/react-lazy-progressive-image.svg?style=for-the-badge)](https://www.npmjs.com/package/react-lazy-progressive-image)
 [![npm](https://img.shields.io/npm/l/react-lazy-progressive-image.svg?style=for-the-badge)](https://www.npmjs.com/package/react-lazy-progressive-image)
+[![CircleCI](https://circleci.com/gh/imbhargav5/react-lazy-progressive-image.svg?style=svg)](https://circleci.com/gh/imbhargav5/react-lazy-progressive-image)
 
 </p>
 <hr/>
