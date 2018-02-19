@@ -2,11 +2,11 @@
 
 # react-lazy-progressive-image
 
+Load low resolution/ placeholder image first and then load the actual image lazily when it's in the viewport.
+
 <hr/>
 
 [![](https://nodei.co/npm/react-lazy-progressive-image.png?compact=true)](https://nodei.co/npm/react-lazy-progressive-image/)
-
-<hr/>
 
 [![npm](https://img.shields.io/npm/dm/react-lazy-progressive-image.svg?style=for-the-badge)](https://www.npmjs.com/package/react-lazy-progressive-image)
 [![npm](https://img.shields.io/npm/l/react-lazy-progressive-image.svg?style=for-the-badge)](https://www.npmjs.com/package/react-lazy-progressive-image)
