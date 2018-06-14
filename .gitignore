@@ -5,3 +5,4 @@ lib
 .cache
 umd
 .DS_Store
+.docz
