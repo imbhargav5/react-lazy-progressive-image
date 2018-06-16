@@ -1,16 +1,8 @@
-// @flow
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import VisibilitySensor from "react-visibility-sensor";
 
-export default class LazyImage extends Component {
-  static propTypes = {
-    children: PropTypes.func,
-    onError: PropTypes.func,
-    placeholder: PropTypes.string,
-    src: PropTypes.string,
-    visibilitySensorProps: PropTypes.any
-  };
+class LazyImage extends Component {
   constructor(props) {
     super(props);
     this.image = null;
@@ -111,3 +103,13 @@ export default class LazyImage extends Component {
     );
   }
 }
+
+LazyImage.propTypes = {
+  children: PropTypes.func,
+  onError: PropTypes.func,
+  placeholder: PropTypes.string,
+  src: PropTypes.string,
+  visibilitySensorProps: PropTypes.any
+}
+
+export default LazyImage;
