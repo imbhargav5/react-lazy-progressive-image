@@ -33,4 +33,8 @@ describe("react-lazy-progressive-image", () => {
     const instance = wrapper.instance();
     expect(instance.image.constructor).toBe(HTMLImageElement);
   });
+  it.skip("throws if function is not sent as child", () => {
+    expect(mount(<LazyImage src={src} placeholder={placeholder}/>)).toThrow();
+  });
+
 });
