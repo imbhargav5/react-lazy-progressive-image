@@ -1,25 +1,11 @@
-// @flow
-import * as React from "react";
+import React, { Component } from "react";
+import PropTypes from "prop-types";
 import VisibilitySensor from "react-visibility-sensor";
 
-type Props = {
-  children: (string, boolean, boolean) => React.Node,
-  onError?: (errorEvent: Event) => void,
-  placeholder: string,
-  src: string,
-  visibilitySensorProps: ?any
-};
-
-type State = {
-  image: string,
-  loading: boolean,
-  isVisible: boolean
-};
-
-export default class LazyImage extends React.Component<Props, State> {
-  image: HTMLImageElement;
-  constructor(props: Props) {
+class LazyImage extends Component {
+  constructor(props) {
     super(props);
+    this.image = null;
     this.state = {
       image: props.placeholder,
       isVisible: false,
@@ -32,7 +18,7 @@ export default class LazyImage extends React.Component<Props, State> {
   //   this.loadImage(src);
   // }
 
-  componentWillReceiveProps(nextProps: Props) {
+  componentWillReceiveProps(nextProps) {
     const { src, placeholder } = nextProps;
     // We only invalidate the current image if the src has changed.
     if (src !== this.props.src) {
@@ -52,7 +38,7 @@ export default class LazyImage extends React.Component<Props, State> {
     }
   }
 
-  loadImage = (src: string) => {
+  loadImage = src => {
     // If there is already an image we nullify the onload
     // and onerror props so it does not incorrectly set state
     // when it resolves
@@ -67,7 +53,7 @@ export default class LazyImage extends React.Component<Props, State> {
     image.src = src;
   };
 
-  handleVisibilityChange = (isVisible: boolean) => {
+  handleVisibilityChange = isVisible => {
     this.setState(
       {
         isVisible: isVisible
@@ -92,7 +78,7 @@ export default class LazyImage extends React.Component<Props, State> {
     });
   };
 
-  onError = (errorEvent: Event) => {
+  onError = errorEvent => {
     const { onError } = this.props;
     if (onError) {
       onError(errorEvent);
@@ -117,3 +103,13 @@ export default class LazyImage extends React.Component<Props, State> {
     );
   }
 }
+
+LazyImage.propTypes = {
+  children: PropTypes.func,
+  onError: PropTypes.func,
+  placeholder: PropTypes.string,
+  src: PropTypes.string,
+  visibilitySensorProps: PropTypes.any
+}
+
+export default LazyImage;
