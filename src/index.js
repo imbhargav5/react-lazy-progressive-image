@@ -110,6 +110,6 @@ LazyImage.propTypes = {
   placeholder: PropTypes.string,
   src: PropTypes.string,
   visibilitySensorProps: PropTypes.any
-}
+};
 
 export default LazyImage;
