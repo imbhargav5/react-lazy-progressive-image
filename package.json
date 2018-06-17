@@ -13,7 +13,8 @@
   ],
   "scripts": {
     "predev": "rimraf dist",
-    "docz": "docz dev",
+    "docz-build" : "docz build",
+    "docz-dev": "docz dev",
     "dev": "parcel demo/index.html",
     "prebuild": "rimraf lib",
     "pretty": "prettier --write '{__tests__,src}/*.js'",
