@@ -8,6 +8,7 @@ describe("Scrolltest", () => {
   let page;
   let browser;
   beforeAll(async () => {
+    jest.setTimeout(30000);
     browser = await puppeteer.launch({
       executablePath: process.env.GOOGLE_CHROME_BINARY || undefined,
       args: ["--no-sandbox", "--disable-setuid-sandbox", "--disable-lcd-text"]
