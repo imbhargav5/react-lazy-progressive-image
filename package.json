@@ -24,9 +24,7 @@
     "test:main:watch": "jest -c .jest.main.json --watch",
     "test:watch": "npm run test:main:watch",
     "pretest:only": "npm run build",
-    "test": "npm run lint && npm run test:only && npm run test:integration",
-    "prepublish": "npm run pretty && npm run test",
-    "postpublish": "git push origin master --tags"
+    "test": "npm run lint && npm run test:only && npm run test:integration"
   },
   "repository": {
     "type": "git",
