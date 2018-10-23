@@ -31,8 +31,8 @@ describe("react-lazy-progressive-image", () => {
   it("creates an instance of Image when loaded", () => {
     const wrapper = mountProgressiveImage();
     const instance = wrapper.instance();
-    wrapper.instance().loadImage(src);
-    wrapper.instance().onLoad();
+    instance.loadImage(src);
+    instance.onLoad();
     expect(instance.image.constructor).toBe(HTMLImageElement);
   });
   it.skip("throws if function is not sent as child", () => {
@@ -50,7 +50,7 @@ describe("react-lazy-progressive-image loads the right image", () => {
       .fn()
       .mockImplementation(imgSrc => <img src={imgSrc} />);
     const wrapper = mountProgressiveImage(renderMock);
-    const instance = wrapper.instance();
+    wrapper.instance();
     expect(renderMock.mock.calls[0][0]).toEqual(placeholder);
   });
 
