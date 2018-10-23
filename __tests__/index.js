@@ -5,8 +5,8 @@ import LazyImage from "../lib";
 
 configure({ adapter: new Adapter() });
 
-const src = "SOURCE";
-const placeholder = "PLACEHOLDER";
+const src = "https://example.com/src.png";
+const placeholder = "https://example.com/placeholder.png";
 
 const mountProgressiveImage = renderFn => {
   const defaultRender = image => {
@@ -28,9 +28,11 @@ describe("react-lazy-progressive-image", () => {
   it("exports a React component", () => {
     expect(typeof LazyImage).toBe("function");
   });
-  it("creates an instance of Image when mounted", () => {
+  it("creates an instance of Image when loaded", () => {
     const wrapper = mountProgressiveImage();
     const instance = wrapper.instance();
+    wrapper.instance().loadImage(src);
+    wrapper.instance().onLoad();
     expect(instance.image.constructor).toBe(HTMLImageElement);
   });
   it.skip("throws if function is not sent as child", () => {
