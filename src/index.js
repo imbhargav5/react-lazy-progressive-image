@@ -12,11 +12,6 @@ class LazyImage extends Component {
       loading: true
     };
   }
-  //
-  // componentDidMount() {
-  //   const { src } = this.props;
-  //   this.loadImage(src);
-  // }
 
   componentDidUpdate(oldProps) {
     const { src, placeholder } = this.props;
