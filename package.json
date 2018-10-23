@@ -6,11 +6,7 @@
   "engines": {
     "node": ">=6.0.0"
   },
-  "files": [
-    ".github",
-    "lib",
-    "src"
-  ],
+  "files": [".github", "lib", "src"],
   "scripts": {
     "predev": "rimraf dist",
     "docz-build" : "docz build",
@@ -30,12 +26,14 @@
     "type": "git",
     "url": "git+https://github.com/imbhargav5/react-lazy-progressive-image.git"
   },
-  "author": "Bhargav Ponnapalli <bhargavponnapalli.5@gmail.com> (https://github.com/imbhargav5)",
+  "author":
+    "Bhargav Ponnapalli <bhargavponnapalli.5@gmail.com> (https://github.com/imbhargav5)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/imbhargav5/react-lazy-progressive-image/issues"
   },
-  "homepage": "https://github.com/imbhargav5/react-lazy-progressive-image#readme",
+  "homepage":
+    "https://github.com/imbhargav5/react-lazy-progressive-image#readme",
   "devDependencies": {
     "@babel/cli": "^7.0.0-beta.51",
     "@babel/core": "^7.0.0-beta.51",
@@ -68,6 +66,9 @@
     "webpack-dev-server": "2.11.0"
   },
   "dependencies": {
-    "react-visibility-sensor": "3.11.0"
+    "react-visibility-sensor": "^3.11.0"
+  },
+  "peerDependencies": {
+    "react": "^0.14.9 || ^15.3.0 || ^16.0.0"
   }
 }
