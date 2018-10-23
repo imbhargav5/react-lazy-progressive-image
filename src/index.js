@@ -22,12 +22,12 @@ class LazyImage extends Component {
     const { src, placeholder } = this.props;
     // We only invalidate the current image if the src has changed.
     if (src !== oldProps.src) {
-      this.setState({ image: placeholder, loading: true }, () => {
-        // load the image if in viewport
-        if (this.state.isVisible) {
-          this.loadImage(src);
-        }
-      });
+      if (this.state.isVisible) {
+        // load new image right away
+        this.loadImage(src);
+      } else {
+        this.setState({ image: placeholder, loading: true });
+      }
     }
   }
 
