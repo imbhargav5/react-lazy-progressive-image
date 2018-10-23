@@ -6,3 +6,4 @@ lib
 umd
 .DS_Store
 .docz
+package-lock.json
