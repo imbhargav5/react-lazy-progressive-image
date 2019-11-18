@@ -55,7 +55,7 @@
     "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "^1.6.0",
     "eslint": "^4.19.1",
-    "eslint-config-prettier": "2.9.0",
+    "eslint-config-prettier": "6.6.0",
     "eslint-plugin-babel": "4.1.2",
     "eslint-plugin-filenames": "1.2.0",
     "eslint-plugin-prettier": "2.5.0",
