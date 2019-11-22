@@ -10,7 +10,7 @@ Load low resolution/ placeholder image first and then load the actual image lazi
 
 [![npm](https://img.shields.io/npm/dm/react-lazy-progressive-image.svg?style=for-the-badge)](https://www.npmjs.com/package/react-lazy-progressive-image)
 [![npm](https://img.shields.io/npm/l/react-lazy-progressive-image.svg?style=for-the-badge)](https://www.npmjs.com/package/react-lazy-progressive-image)
-![Build Status](https://github.com/imbhargav5/react-lazy-progressive-image/workflows/Test/badge.svg)
+![Build Status](https://github.com/imbhargav5/react-lazy-progressive-image/workflows/Tests/badge.svg)
 
 </p>
 <hr/>
