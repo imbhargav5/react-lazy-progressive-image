@@ -1,0 +1,20 @@
+name: CI
+on:
+    push:
+        branches:
+            - master
+
+jobs:
+    prerelease:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v1
+            - name: build
+              uses: npm run build
+            - name: test
+              uses: npm run test
+            - name: Make prerelease to npm
+              uses: epeli/npm-release@v1
+              with:
+                  type: prerelease
+                  token: ${{ secrets.NPM_TOKEN }}
