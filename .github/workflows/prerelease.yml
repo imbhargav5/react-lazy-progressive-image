@@ -1,4 +1,4 @@
-name: CI
+name: Prerelease
 on:
     push:
         branches:
@@ -9,10 +9,12 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v1
+            - name: Setup Node.js for use with actions
+              uses: actions/setup-node@v1.1.0
             - name: build
-              uses: npm run build
+              run: npm run build
             - name: test
-              uses: npm run test
+              run: npm run test
             - name: Make prerelease to npm
               uses: epeli/npm-release@v1
               with:
