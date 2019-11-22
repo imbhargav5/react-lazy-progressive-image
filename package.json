@@ -77,7 +77,7 @@
     "webpack-dev-server": "3.9.0"
   },
   "dependencies": {
-    "react-visibility-sensor": "^3.14.0"
+    "react-visibility-sensor": "^5.1.1"
   },
   "peerDependencies": {
     "react": "^0.14.9 || ^15.3.0 || ^16.0.0"
