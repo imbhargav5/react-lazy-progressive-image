@@ -72,7 +72,7 @@
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "rimraf": "2.6.2",
-    "styled-components": "2.4.0",
+    "styled-components": "4.4.1",
     "webpack": "^4.12.0",
     "webpack-dev-server": "3.9.0"
   },
