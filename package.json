@@ -6,10 +6,12 @@
   "engines": {
     "node": ">=6.0.0"
   },
+  "types": "index.d.ts",
   "files": [
     ".github",
     "lib",
-    "src"
+    "src",
+    "index.d.ts"
   ],
   "scripts": {
     "predev": "rimraf dist",
